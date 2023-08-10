@@ -1,16 +1,16 @@
-import Head from "next/head";
 import Layout from "@/components/Common/Layout";
-import HeaderContent from "@/components/Header/HeaderContent";
 import FooterContent from "@/components/Footer/FooterContent";
-import MainContent from "@/components/Main/MainContent";
-import SidebarContent from "@/components/Sidebar/SidebarContent";
+import HeaderContent from "@/components/Header/HeaderContent";
 import NavbarContent from "@/components/Navbar/NavbarContent";
+import SidebarContent from "@/components/Sidebar/SidebarContent";
+import Head from "next/head";
+import React from "react";
 
-export default function Home() {
+export default function contentPage() {
   return (
     <>
       <Head>
-        <title>components | home</title>
+        <title>components | content</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout
@@ -19,7 +19,7 @@ export default function Home() {
         SidebarContentComponent={<SidebarContent />}
         FooterContentComponent={<FooterContent />}
       >
-        <MainContent />
+        <div className="p-4">Content Page</div>
       </Layout>
     </>
   );
