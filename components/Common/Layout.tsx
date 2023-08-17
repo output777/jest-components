@@ -30,7 +30,7 @@ function Layout({
 
       <main className="bg-green-200 flex-grow">
         <div className="flex">
-          <Sidebar className="bg-green-400 h-screen w-64">
+          <Sidebar className="bg-green-400 h-100% w-64">
             {SidebarContentComponent}
           </Sidebar>
           {children}
